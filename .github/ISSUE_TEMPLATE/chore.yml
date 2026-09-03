@@ -1,0 +1,23 @@
+name: Chore
+description: Work with no user-visible outcome — tooling, CI, dependencies, cleanup
+labels: ["type:chore"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What gets worse if this is not done, or what it unblocks.
+    validations:
+      required: true
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      value: |
+        - [ ]

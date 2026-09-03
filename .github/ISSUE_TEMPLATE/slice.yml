@@ -1,0 +1,27 @@
+name: Vertical slice
+description: A user-visible change that crosses all layers
+labels: ["type:feature"]
+body:
+  - type: input
+    id: outcome
+    attributes:
+      label: Outcome
+      description: One sentence, from the user's side.
+      placeholder: As a user I can ___, so that ___.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Each line is something that can be checked, not a description of work.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Decisions made, things deliberately deferred, and why.

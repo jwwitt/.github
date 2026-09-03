@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: JWW Roadmap
+    url: https://github.com/users/jwwitt/projects/2
+    about: Cross-repo planning board. Priority, size and target dates live there, not on issues.

@@ -1,0 +1,41 @@
+name: Decision (ADR)
+description: The deliverable is a written decision record, not code
+title: "ADR-NNNN: "
+labels: ["type:decision"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: The question
+      description: What has to be decided, and what is blocked until it is.
+    validations:
+      required: true
+  - type: textarea
+    id: why-now
+    attributes:
+      label: Why now
+      description: What gets expensive if this is decided later instead.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      value: |
+        **A.**
+
+        **B.**
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommendation
+      description: The option to take, and the reason.
+  - type: checkboxes
+    id: done-when
+    attributes:
+      label: Done when
+      options:
+        - label: "An ADR is committed under this repo's `docs/adr/`, stating the decision, the alternatives rejected, and the consequences"
+        - label: Anything the decision invalidates is updated in the same PR

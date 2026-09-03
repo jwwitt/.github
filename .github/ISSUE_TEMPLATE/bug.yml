@@ -1,0 +1,30 @@
+name: Bug
+description: Something the system already claims to do, and does not
+labels: ["type:bug"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened
+      description: Cite the issue, ADR or acceptance criterion that promised it, if one did.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      value: |
+        1.
+        2.
+  - type: checkboxes
+    id: done-when
+    attributes:
+      label: Done when
+      options:
+        - label: A test fails before the fix and passes after it
